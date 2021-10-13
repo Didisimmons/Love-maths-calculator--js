@@ -1,17 +1,45 @@
-function runGame();
+document.addEventListener("DOMContentLoaded", function() {
+    let buttons = document.getElementsByTagName("button");
 
-function checkAnswer();
+    for (let button of buttons) {
+        button.addEventListener("click", function() { ////an event listener which  listens for  button to be clicked, when the button is clicked the codeinside runs 
+            if (this.getAttribute("data-type") === "submit") {
+                alert("You clicked Submit!");
+            } else {
+                let gameType = this.getAttribute("data-type"); ////informs user button that is clicked
+                alert(`You clicked ${gameType}`);
+            }
+        });
+    }
+});
 
-function calculateCorrectAnswer();
+function runGame() {
 
-function incrementScore();
+}
 
-function incrementWrongScore();
+function checkAnswer() {
 
-function displayAdditionQuestion();
+}
 
-function displaySubtractQuestion();
+function calculateCorrectAnswer() {
 
-function displayMultiplyQuestion();
+}
 
-function displayDivideQuestion();
+function incrementScore() {
+
+}
+
+function incrementWrongAnswer() {
+
+}
+
+function displayAdditionQuestion() {
+
+}
+
+function displaySubtractQuestion() {
+
+}
+
+function displayMultiplyQuestion() {
+}
